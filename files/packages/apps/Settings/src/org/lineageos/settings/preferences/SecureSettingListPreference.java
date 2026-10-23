@@ -75,10 +75,4 @@ public class SecureSettingListPreference extends ListPreference {
         return String.valueOf(value);
     }
 
-    @Override
-    protected boolean isPersisted() {
-        // The value lives in Settings.Secure, which always has an implicit
-        // default, so treat the preference as always persisted.
-        return true;
-    }
 }
